@@ -42,19 +42,19 @@ public class WashingMachines {
 				String onOff = in.next();
 				
 				switch (onOff) {
-					case "On":
+					case "on":
 						System.out.println("The washing machine is on!");
 						System.out.println("--Functions-- ");
 						for(int i = 0; i < function.length; i++) {
 						System.out.println(function[i]);
 						}break;
 						
-					case "Off":
+					case "off":
 						System.out.println("The washing machine is now off!");
-						break;
+					break;
+						
 				}
-		
-				
+	
 			}
 			void printRinseSpin() {
 			System.out.print("Please enter the function:");
@@ -64,20 +64,22 @@ public class WashingMachines {
 			String ws = "Water Saving";
 			String d = "Delicate";
 		
-			if (function == r) {
+			if (function.equals(r)) {
 			System.out.println("The Rinse Spin for Regular is 45minutes");
 			}
-			else if (function == q) {
+			else if (function.equals(q)) {
 					System.out.println("The Rinse Spin for Quick is 30minutes");
 				}
-			else if (function == ws) {
+			else if (function.equals(ws)) {
 					System.out.println("The Rinse Spin for Water Saving is 20minutes");
 				}
-			else if (function == d) {
+			else if (function.equals(d)) {
 					System.out.println("The Rinse Spin for Delicate is 40mintues");
-				}
+				}		
+			else {
+				System.out.println("This function is unvaiable!");
+
 			}
-			
+	}
 }
-				
 		
